@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>ItsMe</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav_logo">
+                SanjesBK
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav_link active_link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav_link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav_link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav_link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="nav_close" id="nav-close">
+                    <i class="fa-sharp fa-solid fa-xmark nav_close" id="nav-close"></i>
+                </div>
+            </div>
+
+            <div class="nav_btns">
+                <!--===== THEME CHANGE BUTTON =====-->
+                <div class="nav_toogle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_img">
+                    <img src="assets/images/Home.png" alt="">
+                </div>
+
+                <div class="home_data">
+                    <h1 class="home_title">Hello World</h1>
+                    <h3 class="home_subtitle">Saya Sanjes Bangkit Karunia</h3>
+                    <p class="home_description">
+                        Antusias
+                        terhadap bidang teknologi informasi dan terus termotivasi untuk belajar
+                        hal baru
+                    </p>
+                    <a href="#about" class="button button--flex">
+                        Show More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about_container container grid">
+                <img src="assets/images/Me.png" alt="" class="about_img">
+
+                <div class="about_data">
+                    <p class="about_description">
+                        <b>Hello World</b>, perkenalkan nama saya Sanjes Bangkit Karunia Pendidikan terakhir yang
+                        ditempuh S1 jurusan Sistem
+                        Informasi. Beberapa keahlian yang saya miliki
+                        diantaranya:
+                        <br>
+                        1. PHP
+                        <br>
+                        2. HTML
+                        <br>
+                        3. CSS
+                        <br>
+                        4. Javascript
+                        <br>
+                        5. MySQL
+                        <br>
+                        Selain itu saya dapat membuat flowchart, usecase dan ERD.
+                    </p>
+
+                    <div class="about_buttons">
+                        <a href="assets/pdf/Sanjes_CV.pdf" class="button button--flex">
+                            Download CV <i class="fa-solid fa-file-arrow-down button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio_container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--============ PORTFOLIO 1 ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/images/SIMKEL.png" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Project SIMKEL</h3>
+                            <p class="portfolio_description">
+                                Sebuah website yang bersifat localhost, dipergunakan untuk keperluan surat masuk dan
+                                keluar di Kelurahan Melong Cimahi Selatan. Memiliki 2 fitur admin dan pegawai.
+                                <br>
+                                1. Fitur admin tersedia CRUD pejabat setempat.
+                                <br>
+                                2. Fitur pegawai tersedia CRUD surat masyarakat.
+                                <br>
+                                <br>
+                                Dibuat Menggunakan : PHP,HTML,CSS dan JavaScript(Boostrap) dan MySQL
+                            </p>
+
+                        </div>
+                    </div>
+                    <!--============ PORTFOLIO 2 ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/images/Login.png" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Login Form</h3>
+                            <p class="portfolio_description">
+                                Sebuah Layout bagian login, yang dibuat dengan wave background, layout transparent dan
+                                menggunakan icon dari font awesome.
+                                <br>
+                                Dibuat Menggunakan : HTML dan CSS
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--Add Arrow-->
+                <div class="swiper-button-next">
+                    <i class="fa-solid fa-angle-right swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fa-solid fa-angle-left swiper-portfolio-icon"></i>
+                </div>
+                <!--Add Pagination-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer" id="contact">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">SanjesBK</h1>
+                    <span class="footer_subtitle">Antusias
+                        terhadap bidang teknologi informasi dan terus termotivasi untuk belajar
+                        hal baru</span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#home" class="footer_link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="footer_link">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer_link">Portfolio</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socails">
+                    <form action="" class="contact_form grid">
+                        <div class="contact_information">
+                            <i class="fa-brands fa-whatsapp contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Call Me</h3>
+                                <span class="contact_subtitle">+62 895351740803</span>
+                            </div>
+                        </div>
+                        <div class="contact_information">
+                            <i class="fa-solid fa-envelope contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Email</h3>
+                                <span class="contact_subtitle">bangkitsanjes@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact_information">
+                            <i class="fa-brands fa-github contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">GitHub</h3>
+                                <span class="contact_subtitle">Bangkittt25.github.io</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <p class="footer_copy">&#169; 2023 Sanjes</p>
+        </div>
+    </footer>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
